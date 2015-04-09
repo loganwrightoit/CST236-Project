@@ -6,13 +6,13 @@ import org.junit.Test;
 
 public class TokenizerTest {
 
-	@Test
-	/**
-	 * Unimplemented coverage test.
-	 */
-	public void test()
-	{
-		Tokenizer tk = new Tokenizer();
-	}
+    @Test
+    /**
+     * Unimplemented coverage test.
+     */
+    public void test()
+    {
+        Tokenizer tk = new Tokenizer();
+    }
 
 }
