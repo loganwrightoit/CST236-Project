@@ -1,9 +1,9 @@
-package test.java;
+package test.java.gui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import main.java.CodeWriter;
-import main.java.CodeWriter.CodeWriterRunnable;
+import main.java.gui.CodeWriter;
+import main.java.gui.CodeWriter.CodeWriterRunnable;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -53,7 +53,5 @@ public class CodeWriterTest {
         main.initUserInterface();
         assertEquals(main.getTitle(), "CodeWriter");
     }
-
-
 
 }

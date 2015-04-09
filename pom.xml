@@ -22,7 +22,7 @@
         <version>2.18.1</version>
         <configuration>
           <excludes>
-            <exclude>**/CodeWriterTest.java</exclude>
+            <exclude>**/gui</exclude>
           </excludes>
         </configuration>
       </plugin>
