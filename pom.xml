@@ -5,7 +5,8 @@
   <artifactId>CST236-Project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/java/main</sourceDirectory>
+    <testSourceDirectory>src/java/test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
