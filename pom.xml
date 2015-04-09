@@ -16,15 +16,15 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-	  <plugin>
-        <groupId>org.apache.maven.surefire</groupId>
-        <artifactId>surefire</artifactId>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
         <version>2.18.1</version>
-	    <configuration>
-		  <systemProperties>
-            <java.awt.headless>true</java.awt.headless>
-          </systemProperties>
-	    </configuration>
+        <configuration>
+          <excludes>
+            <exclude>**/CodeWriterTest.java</exclude>
+          </excludes>
+        </configuration>
       </plugin>
     </plugins>
   </build>
