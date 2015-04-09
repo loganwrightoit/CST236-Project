@@ -1,10 +1,9 @@
-package java.test;
+package test.java;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-
-import java.main.CodeWriter;
-import java.main.CodeWriter.CodeWriterRunnable;
+import main.java.CodeWriter;
+import main.java.CodeWriter.CodeWriterRunnable;
 
 import org.junit.Test;
 

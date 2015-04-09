@@ -1,4 +1,4 @@
-package java.main.util;
+package main.java.util;
 
 public class Tokenizer {
 

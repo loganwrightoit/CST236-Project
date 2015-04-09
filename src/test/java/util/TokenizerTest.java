@@ -1,6 +1,6 @@
-package java.test.util;
+package test.java.util;
 
-import java.main.util.Tokenizer;
+import main.java.util.Tokenizer;
 
 import org.junit.Test;
 
