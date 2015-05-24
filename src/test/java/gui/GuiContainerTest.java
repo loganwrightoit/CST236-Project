@@ -3,9 +3,13 @@ package test.java.gui;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import javax.swing.JTextArea;
+import javax.swing.text.BadLocationException;
+
 import main.java.gui.CodeWriter;
 import main.java.gui.GuiContainer;
 
+import org.easymock.EasyMock;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,6 +38,15 @@ public class GuiContainerTest {
         listener.keyPressed(key);
         listener.keyReleased(key);
         listener.keyTyped(key);
+
+        // Exception branch coverage
+        JTextArea mockText = EasyMock.createMock(JTextArea.class);
+        try {
+            EasyMock.expect(mockText.getLineOfOffset(1)).andThrow(new BadLocationException("", 0));
+        } catch (BadLocationException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
 }
