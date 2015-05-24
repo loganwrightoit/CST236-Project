@@ -39,16 +39,10 @@ public class GuiContainer extends JPanel {
 
         inputText.addKeyListener(new KeyListener() {
             @Override
-            public void keyTyped(KeyEvent e)
-            {
-
-            }
+            public void keyTyped(KeyEvent e) { }
 
             @Override
-            public void keyPressed(KeyEvent e)
-            {
-                // TODO Auto-generated method stub
-            }
+            public void keyPressed(KeyEvent e) { }
 
             @Override
             public void keyReleased(KeyEvent e)
@@ -58,8 +52,8 @@ public class GuiContainer extends JPanel {
                     int pos_start = inputText.getLineStartOffset(line);
                     int pos_end = inputText.getLineEndOffset(line);
                     String str = inputText.getText().substring(pos_start, pos_end);
-
-                    IInstruction instr = Definitions.parseInstruction(str);
+                    Definitions def = new Definitions();
+                    IInstruction instr = def.parseInstruction(str);
                     if (instr != null)
                     {
                         instr.execute(str);

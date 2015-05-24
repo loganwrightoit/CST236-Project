@@ -1,7 +1,9 @@
 package test.java.util.instructions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.awt.Color;
 
@@ -19,9 +21,9 @@ public class ColorInstructionTest {
 
     @Before
     /**
-     * Test input color instruction
+     * Test setup.
      */
-    public void init()
+    public void setUp()
     {
         gui = CodeWriter.getRunnable().getInstance().guiContainer;
         instr = new ColorInstruction();
@@ -33,8 +35,6 @@ public class ColorInstructionTest {
      */
     public void testChangeForegroundColor()
     {
-
-
         Color color = gui.getOutput().getForeground();
         assertNotEquals(color, Color.PINK);
 
@@ -63,6 +63,36 @@ public class ColorInstructionTest {
         // Verify background color
         color = gui.getOutput().getBackground();
         assertEquals(color, Color.YELLOW);
+    }
+
+    @Test
+    /**
+     * Test identifying hex color.
+     */
+    public void testHexColor()
+    {
+        Color color = gui.getOutput().getBackground();
+        assertNotEquals(color, Color.decode("0xffee22"));
+
+        String input = "make the background color 0xffee22";
+        ColorInstruction instr = new ColorInstruction();
+        instr.execute(input);
+
+        // Verify background color
+        color = gui.getOutput().getBackground();
+        assertEquals(color, Color.decode("0xffee22"));
+    }
+
+    @Test
+    /**
+     * Test color decoding.
+     */
+    public void testColorDecoding()
+    {
+        boolean result = instr.execute("no color in this string");
+        assertFalse(result);
+        result = instr.execute("make text color yellow");
+        assertTrue(result);
     }
 
 }

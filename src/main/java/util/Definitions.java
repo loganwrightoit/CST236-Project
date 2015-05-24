@@ -18,7 +18,7 @@ public class Definitions {
         keywords.put("font", FontInstruction.class);
     }
 
-    public static IInstruction parseInstruction(String input)
+    public IInstruction parseInstruction(String input)
     {
         StringTokenizer st = new StringTokenizer(input);
         while (st.hasMoreTokens())
@@ -30,15 +30,25 @@ public class Definitions {
             if (clazz != null)
             {
                 try {
-                    return clazz.newInstance();
-                } catch (Exception e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+                    return getClassInstance(clazz);
+                } catch (Exception e) { }
             }
         }
 
         return null;
+    }
+
+    /**
+     * Grabs a new instance of the class and returns it.
+     *
+     * @param clazz
+     * @return
+     * @throws InstantiationException
+     * @throws IllegalAccessException
+     */
+    public IInstruction getClassInstance(Class<? extends IInstruction> clazz) throws InstantiationException, IllegalAccessException
+    {
+        return clazz.newInstance();
     }
 
 }
