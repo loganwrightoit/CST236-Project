@@ -8,6 +8,8 @@ public class CodeWriter extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
+    public static GuiContainer guiContainer;
+
     private CodeWriter()
     {
         initUserInterface();
@@ -16,9 +18,13 @@ public class CodeWriter extends JFrame {
     public void initUserInterface()
     {
         setTitle("CodeWriter");
-        setSize(400, 200);
+        setSize(600, 400);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        // Init layout container
+        guiContainer = new GuiContainer(this);
+        add(guiContainer);
     }
 
     public static void main(String[] args)

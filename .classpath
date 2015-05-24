@@ -17,6 +17,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/dependencies/cglib-nodep-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/dependencies/easymock-3.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/dependencies/javassist-3.19.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/dependencies/objenesis-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Logan/Desktop/CST236-Project/dependencies/powermock-easymock-1.6.2-full.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
