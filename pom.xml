@@ -23,6 +23,7 @@
         <configuration>
           <excludes>
             <exclude>**/gui/*</exclude>
+            <exclude>**/gui/instructions/*</exclude>
           </excludes>
         </configuration>
       </plugin>
