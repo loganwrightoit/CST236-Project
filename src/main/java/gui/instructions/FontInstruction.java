@@ -1,4 +1,4 @@
-package main.java.util.instructions;
+package main.java.gui.instructions;
 
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;

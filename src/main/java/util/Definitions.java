@@ -3,10 +3,10 @@ package main.java.util;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
 
-import main.java.util.instructions.ColorInstruction;
-import main.java.util.instructions.FontInstruction;
-import main.java.util.instructions.IInstruction;
-import main.java.util.instructions.StyleInstruction;
+import main.java.gui.instructions.ColorInstruction;
+import main.java.gui.instructions.FontInstruction;
+import main.java.gui.instructions.IInstruction;
+import main.java.gui.instructions.StyleInstruction;
 
 public class Definitions {
 

@@ -1,4 +1,4 @@
-package test.java.util.instructions;
+package test.java.gui.instructions;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -7,7 +7,7 @@ import java.awt.Font;
 
 import main.java.gui.CodeWriter;
 import main.java.gui.GuiContainer;
-import main.java.util.instructions.StyleInstruction;
+import main.java.gui.instructions.StyleInstruction;
 
 import org.junit.Before;
 import org.junit.Test;

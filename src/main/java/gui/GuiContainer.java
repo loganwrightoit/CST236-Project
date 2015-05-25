@@ -11,8 +11,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.text.BadLocationException;
 
+import main.java.gui.instructions.IInstruction;
 import main.java.util.Definitions;
-import main.java.util.instructions.IInstruction;
 
 public class GuiContainer extends JPanel {
 

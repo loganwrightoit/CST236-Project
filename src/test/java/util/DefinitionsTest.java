@@ -1,8 +1,8 @@
 package test.java.util;
 
+import main.java.gui.instructions.ColorInstruction;
+import main.java.gui.instructions.IInstruction;
 import main.java.util.Definitions;
-import main.java.util.instructions.ColorInstruction;
-import main.java.util.instructions.IInstruction;
 
 import org.junit.Assert;
 import org.junit.Before;
